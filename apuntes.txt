@@ -36,6 +36,10 @@ Creacion de servicios en Angular:
 
 ng generate service services/usuario
 
+Creacion de componentes en Angular:
+
+ng generate component components/usuarios
+
 Para iniciar repositorio en GitHub:
 
 En terminal raiz:
