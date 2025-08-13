@@ -42,3 +42,32 @@ En terminal raiz:
 
 git init
 git branch -M main
+
+Solucionar para crear un mono-repo:
+
+# 1) Quita el .git interno de Angular
+cd crud-angular
+rm -rf .git
+cd ..
+
+# 2) Saca del índice el “gitlink” previo y agrega los archivos reales
+git rm --cached -r crud-angular
+git add crud-angular
+
+# 3) Commit y push
+git commit -m "fix: track crud-angular as normal folder"
+git push origin main
+
+Solucionar para crear dos repos:
+
+# dentro de crud-angular
+cd crud-angular
+git remote add origin https://github.com/tu_usuario/tu_repo_angular.git
+git push -u origin main   # o la rama que uses
+
+git submodule add https://github.com/tu_usuario/tu_repo_angular.git crud-angular
+git commit -m "feat: add angular as submodule"
+git push
+
+
+
