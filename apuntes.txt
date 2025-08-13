@@ -1,0 +1,44 @@
+Notas:
+
+Para iniciar un proyecto backend en node.js:
+
+EN TERMINAL DE NUESTRA CARPETA BACKEND:
+
+npm init
+
+Dependencias instaladas:
+
+npm install express mysql2 nodemon cors
+
+Para iniciar servidor express:
+
+En package.json
+
+  "scripts": {
+    "dev": "nodemon server.js",
+  }
+
+Desplegar servidor express
+
+npm run dev
+
+Para crear proyecto en angular:
+
+ng new -project_name-
+
+ng serve
+
+Creacion de clases en Angular:
+
+ng generate class models/usuario (models es package y usuario es la clase)
+
+Creacion de servicios en Angular:
+
+ng generate service services/usuario
+
+Para iniciar repositorio en GitHub:
+
+En terminal raiz:
+
+git init
+git branch -M main
